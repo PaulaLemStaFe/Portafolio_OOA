@@ -211,12 +211,15 @@ i {
 }
 
 .skills_list_item {
+	margin: 0 3.5%;
+    padding: 1.4em 1.4em;
+}
+
+.skills_list_item, .hobbies_list_item {
     display: inline-block;
     text-align: center;
     vertical-align: top;
-	margin: 0 3.5%;
 	margin-bottom: 1.2em;
-    padding: 1.4em 1.4em;
 	border-width: 4px;
   	border-style: solid;
     font-weight: bold;
@@ -225,13 +228,13 @@ i {
     border-radius: 20%;
 }
 
-.skills_list_title {
+.skills_list_title, .hobbies_list_title {
 	font-size: 1.3em;
 	font-weight: bold;
 	padding-bottom: 0.8em;
 }
 
-.skills_list_img {
+.skills_list_img, .hobbies_list_img {
     display: inline;
     width: 250px;
     height: 250px;
@@ -252,6 +255,11 @@ i {
 .pasatiempo {
     background-color: #e3e0dd;
     color: #383a3c;
+}
+
+.hobbies_list_item {
+	margin: 0 2%;
+    padding: 1em 1em;
 }
 
 .formation {
