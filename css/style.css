@@ -1,0 +1,264 @@
+/* otros ejemplos de colores
+#78bbbb
+#e6e1d0
+#D35244
+#e3e0dd
+#e68966
+#e6e1d0
+#4c5057
+    font-family: "BazarMedium";
+    color: #F6EDD8; */
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 0 5px rgb(0 0 0 / 25%);
+}
+
+header {
+    background: url(../imagenes/grain.png) repeat;
+    background-color: #78bbbb;
+    position: fixed;
+    width: 100%;
+}
+
+.encabezado {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nombre h6 {
+    color: #F6EDD8;
+	font-size: 1.4em;
+    font-weight: bold;
+    padding-left: 1.4em;
+}
+
+.navbar {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.item_lista, .item_contacto {
+    display: inline;
+	font-size: 1.1em;
+	font-weight: bold;
+    padding: 0 0.8em;
+}
+
+.item_lista {
+	border-right: 1.5px solid #F6EDD8;
+}
+
+.perfiles li, .skills_list li {
+    display: inline;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 0.5em;
+}
+
+.navbar a {
+    color: #F6EDD8;
+    text-decoration: none;
+}
+
+.navbar a:hover, .perfiles a:hover {
+    color: #4c5057;
+}
+
+.inicio {
+    background-color: #78bbbb;
+}
+
+.banner {
+    background: url(../imagenes/grain.png) repeat;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    color: #F6EDD8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.presentacion {
+    position: static;
+    width: 65%;
+    flex: none;
+    align-self: stretch;
+    padding-top: 40px;
+}
+
+.presentacion h1 {
+    color: #F6EDD8;
+    font-weight: bold;
+	font-size: 40px;
+    line-height: 50px;
+    padding: 0px 10px;
+}
+
+.presentacion p {
+    color: #F6EDD8;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 10px 10px;
+}
+
+.icon .fa-sm {
+	font-size: 2em;
+    line-height: 1.5em;
+    vertical-align: .05357em;
+}
+
+i {
+    margin-left: 0.5em
+}
+
+.perfiles {
+	font-size: 1.575em;
+	text-decoration: none;
+	padding: 5px;
+	margin: 5px 10px;
+}
+
+.perfiles a {
+    color: #F6EDD8;
+    text-decoration: none;
+    margin: 0 0 0 4px;
+    padding: 10px 10px;
+}
+
+.perfil_foto {
+    padding-top: 40px;
+}
+
+.perfil_foto img {
+    width: 250px;
+    height: 250px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border-radius: 100%;
+    align-self: flex-end;
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    border-color: #383a3c;
+}
+
+.about {
+    background-color: #e6e1d0;
+}
+
+.sobre_mi {
+    background: url(../imagenes/grain.png) repeat;
+    align-items: center;
+    padding: 64px;
+    position: static;
+    left: 0px;
+    top: 250px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+}
+
+.sobre_mi h2, .hobbies h2 {
+    color: #383a3c;
+}
+
+.sobre_mi h2, .skills h2, .hobbies h2 {
+    position: static;
+    height: 38px;
+    left: 0px;
+    top: 0px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.sobre_mi p {
+    position: static;
+    width: 80%;
+    left: 0px;
+    top: 54px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 19px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.habilidad {
+    background-color: #D35244;
+}
+
+.skills {
+    color: #F6EDD8;
+}
+
+.skills_list li {
+    display: inline-block;
+    text-align: center;
+    width: 18%;
+	height: auto;
+    vertical-align: top;
+	margin: 0 3.5%;
+	margin-bottom: 1.2em;
+    padding: 1.4em 1.2em;
+	border-width: 4px;
+  	border-style: solid;
+  	border-image: #383a3c;
+    border-radius: 20%;
+}
+
+.skills_list img {
+    display: inline;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    border-color: #383a3c;
+}
+
+.skills, .hobbies {
+    background: url(../imagenes/grain.png) repeat;
+    text-align: center;
+    padding: 30px;
+}
+
+.pasatiempo {
+    background-color: #e3e0dd;
+    color: #383a3c;
+}
+
+.formation {
+    background-color: #e68966;
+}
+
+.formacion, .proyectos {
+    background: url(../imagenes/grain.png) repeat;
+    color: #383a3c;
+}
+
+.projects {
+    background-color: #e6e1d0;
+}
+
+.contact, footer {
+    background-color: #4c5057;
+}
+
+.contacto, .footer {
+    background: url(../imagenes/grain.png) repeat;
+    color: #F6EDD8;
+}
