@@ -159,17 +159,20 @@ i {
     align-items: center;
     display: flex;
 	flex-direction: row-reverse;
-    padding: 30px;
+    padding: 50px;
     position: static;
     flex: none;
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
 }
 
-.img_compu_vintage {
+.sobre_mi_img {
 	margin: 1.2em 1.5em;
-	height: 18em;
-	border-radius: 10%;
     padding-left: 3em;
+}
+
+.img_compu_vintage {
+	border-radius: 15%;
+	height: 18em;
 }
 
 .sobre_mi_title, .hobbies_title {
