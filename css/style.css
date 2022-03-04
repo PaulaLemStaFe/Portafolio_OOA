@@ -54,7 +54,7 @@ header {
 	border-right: 1.5px solid #F6EDD8;
 }
 
-.perfiles li, .skills_list li {
+.perfiles li {
     display: inline;
     font-weight: bold;
     font-size: 18px;
@@ -93,7 +93,7 @@ header {
     padding-top: 40px;
 }
 
-.presentacion h1 {
+.presentacion_title {
     color: #F6EDD8;
     font-weight: bold;
 	font-size: 40px;
@@ -101,7 +101,7 @@ header {
     padding: 0px 10px;
 }
 
-.presentacion p {
+.presentacion_text {
     color: #F6EDD8;
     font-weight: normal;
     font-size: 30px;
@@ -155,6 +155,7 @@ i {
 
 .sobre_mi {
     background: url(../imagenes/grain.png) repeat;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
     align-items: center;
     display: flex;
 	flex-direction: row-reverse;
@@ -165,8 +166,10 @@ i {
 }
 
 .img_compu_vintage {
+	margin: 1.2em 1.5em;
 	height: 18em;
 	border-radius: 10%;
+    padding-left: 3em;
 }
 
 .sobre_mi_title, .hobbies_title {
@@ -174,7 +177,7 @@ i {
 }
 
 .sobre_mi_title, .skills_title, .hobbies_title {
-	font-size: 1.8em;
+	font-size: 2em;
     font-weight: bold;
     padding-left: 1.1em;	
     margin-bottom: 1.2em;
@@ -183,6 +186,7 @@ i {
 
 .sobre_mi_text {
 	margin: 1.5em 1.2em;
+    padding-left: 0.8em;
     font-size: 1.1em ;
     width: 90%;
 	text-align: justify;
@@ -196,35 +200,51 @@ i {
 }
 
 .skills {
+	padding-top: 1.2em;
     color: #F6EDD8;
 }
 
-.skills_list li {
+.skills_list {
+    width: 90%;
+	text-align: center;
+    margin: 0 auto;
+}
+
+.skills_list_item {
     display: inline-block;
     text-align: center;
-    width: 18%;
-	height: auto;
     vertical-align: top;
 	margin: 0 3.5%;
 	margin-bottom: 1.2em;
-    padding: 1.4em 1.2em;
+    padding: 1.4em 1.4em;
 	border-width: 4px;
   	border-style: solid;
+    font-weight: bold;
+    font-size: 18px;
   	border-image: #383a3c;
     border-radius: 20%;
 }
 
-.skills_list img {
+.skills_list_title {
+	font-size: 1.3em;
+	font-weight: bold;
+	padding-bottom: 0.8em;
+}
+
+.skills_list_img {
     display: inline;
     width: 250px;
     height: 250px;
     border-radius: 100%;
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     border-color: #383a3c;
+    border: 1px solid #383a3c;
 }
 
 .skills, .hobbies {
     background: url(../imagenes/grain.png) repeat;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     text-align: center;
     padding: 30px;
 }
@@ -240,6 +260,8 @@ i {
 
 .formacion, .proyectos {
     background: url(../imagenes/grain.png) repeat;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     color: #383a3c;
 }
 
@@ -253,5 +275,7 @@ i {
 
 .contacto, .footer {
     background: url(../imagenes/grain.png) repeat;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     color: #F6EDD8;
 }
