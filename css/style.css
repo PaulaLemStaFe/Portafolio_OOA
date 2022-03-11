@@ -82,7 +82,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 35px;
 }
 
 .presentacion {
@@ -90,7 +90,7 @@ header {
     width: 65%;
     flex: none;
     align-self: stretch;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .presentacion_title {
@@ -134,7 +134,7 @@ i {
 }
 
 .perfil_foto {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .perfil_foto img {
@@ -159,7 +159,7 @@ i {
     align-items: center;
     display: flex;
 	flex-direction: row-reverse;
-    padding: 50px;
+    padding: 35px;
     position: static;
     flex: none;
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
@@ -179,12 +179,12 @@ i {
     color: #383a3c;
 }
 
-.sobre_mi_title, .skills_title, .hobbies_title {
+.sobre_mi_title, .skills_title, .hobbies_title, .formacion_title, .proyectos_title, .contacto_title {
 	font-size: 2em;
     font-weight: bold;
-    padding-left: 1.1em;	
     margin-bottom: 1.2em;
     line-height: 38px;
+    text-align: center;
 }
 
 .sobre_mi_text {
@@ -218,7 +218,7 @@ i {
     padding: 1.4em 1.4em;
 }
 
-.skills_list_item, .hobbies_list_item {
+.skills_list_item, .hobbies_list_item, .formacion_list_item {
     display: inline-block;
     text-align: center;
     vertical-align: top;
@@ -231,7 +231,7 @@ i {
     border-radius: 20%;
 }
 
-.skills_list_title, .hobbies_list_title {
+.skills_list_title, .hobbies_list_title, .formacion_list_title {
 	font-size: 1.3em;
 	font-weight: bold;
 	padding-bottom: 0.8em;
@@ -252,7 +252,7 @@ i {
     border-bottom: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     text-align: center;
-    padding: 30px;
+    padding: 50px;
 }
 
 .pasatiempo {
@@ -261,7 +261,7 @@ i {
 }
 
 .hobbies_list_item {
-	margin: 0 2%;
+	margin: 0 1%;
     padding: 1em 1em;
 }
 
@@ -269,24 +269,186 @@ i {
     background-color: #e68966;
 }
 
+.formacion {
+    text-align: center;
+}
+
+.formacion_list_item {
+    width: 20%;
+	margin: 1% 1%;
+    padding: 1.2em 1.2em;
+}
+
+.formacion_list_img {
+    display: inline;
+    width: 50%;
+    border-radius: 15%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    border-color: #383a3c;
+    border: 1px solid #383a3c;
+}
+
 .formacion, .proyectos {
     background: url(../imagenes/grain.png) repeat;
     border-bottom: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     color: #383a3c;
+    padding: 50px;
 }
 
 .projects {
     background-color: #e6e1d0;
 }
 
-.contact, footer {
+.proyectos {
+    align-items: center;
+    vertical-align: middle;
+}
+
+.proyecto_box {
+	display: flex;
+	justify-content: space-around;
+	vertical-align: middle;
+    margin: 3%;
+}
+
+.proyecto_box_rest {
+    width: 50%;
+    padding: 3%;
+}
+
+.proyecto_img {
+	width: 60%;
+    border-radius: 5%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    border-color: #383a3c;
+    border: 1px solid #383a3c;
+}
+
+.proyecto_title, .proyecto_title_inicio, .proyecto_title_final {
+	font-size: 1.5em;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.proyecto_title_inicio {
+    line-height: 0em;
+}
+
+.proyecto_title, .proyecto_title_final, .proyecto_text {
+    line-height: 2em;
+}
+
+.proyecto_4 .proyecto_box_rest, .proyecto_2 .proyecto_box_rest {
+    text-align: left;
+}
+
+.proyecto_3 .proyecto_title, .proyecto_3 .proyecto_box_rest, .proyecto_1 .proyecto_box_rest {
+    text-align: right;
+}
+
+.proyecto_1 .proyecto_title_inicio, .proyecto_1 .proyecto_title_final {
+    text-align: right;
+}
+
+.proyecto_text {
+    font-size: 1.1em;
+}
+
+.proyecto_button_repo, .proyecto_button_demo {
+    font-size: 1em;
+    text-decoration: none;
+    margin: 5% 10%;
+    padding: 0.2em 0.8em;
+    border-radius: 0.5em;
+    transition: 1s all;
+    cursor: pointer;
+    align-items: center;
+}
+
+.proyecto_button_repo a, .proyecto_button_demo a {
+    text-decoration: none;
+	color: #4c5057;
+}
+
+.proyecto_button_repo a:hover, .proyecto_button_demo a:hover {
+    color: #e6e1d0;
+} 
+
+.proyecto_button_repo, .proyecto_button_demo {
+	background: #78bbbb;
+}
+
+.proyecto_button_repo:hover, .proyecto_button_demo:hover {
+    background: #4c5057;
+}
+
+.contacto {
+	padding: 105px 0 30px 0;
+}
+
+form{
+    margin: 40px 0;
+	padding: 0 30px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form label, form legend {
+    display: block;
+	font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+	font-weight: bold;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 30%;
+	border: none;
+}
+
+.enviar {
+    width: 20%;
+    padding: 1.15em 0;
+    font-size: 1.1em;
+    font-weight: bold; 
+    color: #4c5057;
+    background: #78bbbb;
+    border: none;
+    border-radius: 0.5em;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #D35244;
+    color: #e6e1d0;
+}
+
+.contact, .footer {
     background-color: #4c5057;
 }
 
-.contacto, .footer {
+.contacto, .derechos {
     background: url(../imagenes/grain.png) repeat;
     border-bottom: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     color: #F6EDD8;
+    text-align: center;
+    padding: 50px;
+}
+
+.derechos {
+    background-color: #4c5057;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    bottom: 0;
 }
