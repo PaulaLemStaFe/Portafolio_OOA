@@ -22,12 +22,12 @@ header {
 }
 
 .encabezado {
+    align-items: center;
     border-bottom: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
-    padding: 0.8em 1.2em;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    padding: 0.8em 1.2em;
 }
 
 .nombre h6 {
@@ -75,22 +75,22 @@ header {
 }
 
 .banner {
+    align-items: center;
     background: url(../imagenes/grain.png) repeat;
     border-bottom: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     color: #F6EDD8;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 35px;
 }
 
 .presentacion {
+    align-self: stretch;
+    flex: none;
+    padding-top: 20px;
     position: static;
     width: 65%;
-    flex: none;
-    align-self: stretch;
-    padding-top: 20px;
 }
 
 .presentacion_title {
@@ -121,16 +121,16 @@ i {
 
 .perfiles {
 	font-size: 1.575em;
-	text-decoration: none;
-	padding: 5px;
 	margin: 5px 10px;
+	padding: 5px;
+	text-decoration: none;
 }
 
 .perfiles a {
     color: #F6EDD8;
-    text-decoration: none;
     margin: 0 0 0 4px;
     padding: 10px 10px;
+    text-decoration: none;
 }
 
 .perfil_foto {
@@ -138,15 +138,15 @@ i {
 }
 
 .perfil_foto img {
-    width: 250px;
-    height: 250px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    border-radius: 100%;
     align-self: flex-end;
-    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     border-color: #383a3c;
+    border-radius: 100%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    flex: none;
+    flex-grow: 0;
+    height: 250px;
+    order: 1;
+    width: 250px;
 }
 
 .about {
@@ -154,15 +154,15 @@ i {
 }
 
 .sobre_mi {
+    align-items: center;
     background: url(../imagenes/grain.png) repeat;
     border-bottom: 1px solid rgba(0,0,0,0.15);
-    align-items: center;
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     display: flex;
+    flex: none;
 	flex-direction: row-reverse;
     padding: 35px;
     position: static;
-    flex: none;
-    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
 }
 
 .sobre_mi_img {
@@ -176,8 +176,8 @@ i {
 }
 
 .sobre_mi_title {
-    margin-bottom: 0.8em;
     line-height: 20px;
+    margin-bottom: 0.8em;
 }
 
 .sobre_mi_title, .hobbies_title {
@@ -196,14 +196,14 @@ i {
 }
 
 .sobre_mi_text {
-	margin: 1.5em 1.2em;
-    padding-left: 0.8em;
-    font-size: 1.1em ;
-    width: 90%;
-	text-align: justify;
-    position: static;
+    font-size: 1.1em;
     font-weight: normal;
     line-height: 19px;
+	margin: 1.5em 1.2em;
+    padding-left: 0.8em;
+    position: static;
+	text-align: justify;
+    width: 90%;
 }
 
 .habilidad {
@@ -211,8 +211,8 @@ i {
 }
 
 .skills {
-	padding-top: 1.2em;
     color: #F6EDD8;
+	padding-top: 1.2em;
 }
 
 .skills_title, .contacto_title {
@@ -220,32 +220,41 @@ i {
 }
 
 .skills_list {
-    width: 90%;
+    box-sizing: border-box;
+    margin-bottom: 4.5em;
 	text-align: center;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .skills_list_item {
-	margin: 0 3.5%;
+	margin: 0 2%;
     padding: 1.4em 1.4em;
+    width: 20%;
 }
 
-.skills_title, .hobbies_title, .formacion_title, .proyectos_title, .contacto_title {
-    margin: 1.2em 0;
+.skills_list_item:hover {
+    border-color: #4c5057;
+    color: #4c5057;
+    font-size: 1.4em;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
+}
+
+.skills_title, .hobbies_title, .proyectos_title, .contacto_title {
     line-height: 38px;
+    margin: 1.2em 0;
 }
 
 .skills_list_item, .hobbies_list_item, .formacion_list_item {
+    border-image: #383a3c;
+    border-radius: 20%;
+    border-style: solid;
+	border-width: 4px;
     display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+	margin-bottom: 1.2em;
     text-align: center;
     vertical-align: top;
-	margin-bottom: 1.2em;
-	border-width: 4px;
-  	border-style: solid;
-    font-weight: bold;
-    font-size: 18px;
-  	border-image: #383a3c;
-    border-radius: 20%;
 }
 
 .skills_list_title, .hobbies_list_title, .formacion_list_title {
@@ -255,21 +264,21 @@ i {
 }
 
 .skills_list_img, .hobbies_list_img {
-    display: inline;
-    width: 200px;
-    height: 200px;
+    border: 1px solid #383a3c;
+    border-color: #383a3c;
     border-radius: 100%;
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
-    border-color: #383a3c;
-    border: 1px solid #383a3c;
+    display: inline;
+    height: 200px;
+    width: 200px;
 }
 
 .skills, .hobbies {
     background: url(../imagenes/grain.png) repeat;
     border-bottom: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
-    text-align: center;
     padding: 50px;
+    text-align: center;
 }
 
 .pasatiempo {
@@ -277,9 +286,26 @@ i {
     color: #383a3c;
 }
 
+.hobbies_list {
+    margin-bottom: 6.5em;
+}
+
+.hobbies_list, .formacion_list {
+    box-sizing: border-box;
+    width: 100%;
+}
+
 .hobbies_list_item {
 	margin: 0 1%;
     padding: 1em 1em;
+    width: 15%;
+}
+
+.hobbies_list_item:hover {
+    border-color: #e68966;
+    color: #e68966;
+    font-size: 1.4em;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
 .formation {
@@ -290,19 +316,35 @@ i {
     text-align: center;
 }
 
+.formacion_title {
+    margin-bottom: 0.4em;
+    margin-top: 0.2em;
+}
+
 .formacion_list_item {
-    width: 20%;
-	margin: 1% 1%;
+	margin: 2% 2%;
     padding: 1.2em 1.2em;
+    width: 20%;
+}
+
+.formacion_list_item:hover {
+    border-color: #e3e0dd;
+    color: #e3e0dd;
+    font-size: 1.4em;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
 .formacion_list_img {
-    display: inline;
-    width: 50%;
+    border: 1px solid #383a3c;
+    border-color: #383a3c;
     border-radius: 15%;
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
-    border-color: #383a3c;
-    border: 1px solid #383a3c;
+    display: inline;
+    width: 50%;
+}
+
+.formacion_list_text {
+    font-size: 1.12em;
 }
 
 .formacion, .proyectos {
@@ -322,30 +364,34 @@ i {
     vertical-align: middle;
 }
 
+.proyectos_title {
+    margin: 0.4em 0;
+}
+
 .proyecto_box {
 	display: flex;
 	justify-content: space-around;
-	vertical-align: middle;
     margin: 3%;
+	vertical-align: middle;
 }
 
 .proyecto_box_rest {
-    width: 50%;
     padding: 3%;
+    width: 50%;
 }
 
 .proyecto_img {
-	width: 60%;
+    border: 1px solid #383a3c;
+    border-color: #383a3c;
     border-radius: 5%;
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
-    border-color: #383a3c;
-    border: 1px solid #383a3c;
+	width: 60%;
 }
 
 .proyecto_title, .proyecto_title_inicio, .proyecto_title_final {
 	font-size: 1.5em;
-    text-align: justify;
     font-weight: bold;
+    text-align: justify;
 }
 
 .proyecto_title_inicio {
@@ -373,19 +419,19 @@ i {
 }
 
 .proyecto_button_repo, .proyecto_button_demo {
+    align-items: center;
+    border-radius: 0.5em;
+    cursor: pointer;
     font-size: 1em;
-    text-decoration: none;
     margin: 5% 10%;
     padding: 0.2em 0.8em;
-    border-radius: 0.5em;
+    text-decoration: none;
     transition: 1s all;
-    cursor: pointer;
-    align-items: center;
 }
 
 .proyecto_button_repo a, .proyecto_button_demo a {
-    text-decoration: none;
 	color: #4c5057;
+    text-decoration: none;
 }
 
 .proyecto_button_repo a:hover, .proyecto_button_demo a:hover {
@@ -404,42 +450,42 @@ i {
 	padding: 105px 0 30px 0;
 }
 
-form{
-    margin: 40px 0;
-	padding: 0 30px;
+form {
+    align-items: center;
 	display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: 40px 0;
+	padding: 0 30px;
 }
 
 form label, form legend {
     display: block;
-	font-weight: bold;
     font-size: 20px;
+	font-weight: bold;
     margin: 0 0 10px;
 }
 
 .input-padron {
+	border: none;
     display: block;
 	font-weight: bold;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 30%;
-	border: none;
 }
 
 .enviar {
-    width: 20%;
-    padding: 1.15em 0;
-    font-size: 1.1em;
-    font-weight: bold; 
-    color: #4c5057;
     background: #78bbbb;
     border: none;
     border-radius: 0.5em;
-    transition: 1s all;
+    color: #4c5057;
     cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 1.15em 0;
+    transition: 1s all;
+    width: 20%;
 }
 
 .enviar:hover {
@@ -456,16 +502,16 @@ form label, form legend {
     border-bottom: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     color: #F6EDD8;
-    text-align: center;
     padding: 50px;
+    text-align: center;
 }
 
 .derechos {
     background-color: #4c5057;
+    bottom: 0;
+    max-width: 100%;
     padding: 5px 5px 5px 5px;
+    position: fixed;
     text-align: center;
     width: 100%;
-    max-width: 100%;
-    position: fixed;
-    bottom: 0;
 }
