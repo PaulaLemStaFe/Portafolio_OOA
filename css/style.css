@@ -175,16 +175,24 @@ i {
 	height: 18em;
 }
 
+.sobre_mi_title {
+    margin-bottom: 0.8em;
+    line-height: 20px;
+}
+
 .sobre_mi_title, .hobbies_title {
     color: #383a3c;
 }
 
+.sobre_mi_title, .hobbies_title, .formacion_title, .proyectos_title {
+    text-shadow: 1px 2px #fcfaf7, 3px 4px #484a4d;
+}
+
 .sobre_mi_title, .skills_title, .hobbies_title, .formacion_title, .proyectos_title, .contacto_title {
-	font-size: 2em;
+	font-size: 4em;
     font-weight: bold;
-    margin-bottom: 1.2em;
-    line-height: 38px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .sobre_mi_text {
@@ -207,6 +215,10 @@ i {
     color: #F6EDD8;
 }
 
+.skills_title, .contacto_title {
+    text-shadow: 1px 2px #484a4d, 3px 4px #d4cebf;
+}
+
 .skills_list {
     width: 90%;
 	text-align: center;
@@ -216,6 +228,11 @@ i {
 .skills_list_item {
 	margin: 0 3.5%;
     padding: 1.4em 1.4em;
+}
+
+.skills_title, .hobbies_title, .formacion_title, .proyectos_title, .contacto_title {
+    margin: 1.2em 0;
+    line-height: 38px;
 }
 
 .skills_list_item, .hobbies_list_item, .formacion_list_item {
@@ -239,8 +256,8 @@ i {
 
 .skills_list_img, .hobbies_list_img {
     display: inline;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     border-color: #383a3c;
