@@ -57,7 +57,7 @@ header {
 .perfiles li {
     display: inline;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 0.8em;
     padding: 0 0.5em;
 }
 
@@ -68,6 +68,7 @@ header {
 
 .navbar a:hover, .perfiles a:hover {
     color: #4c5057;
+    font-size: 1.15em;
 }
 
 .inicio {
@@ -90,13 +91,15 @@ header {
     flex: none;
     padding-top: 20px;
     position: static;
-    width: 65%;
+    width: 50%;
 }
 
 .presentacion_title {
+    align-items: center;
     color: #F6EDD8;
     font-weight: bold;
 	font-size: 40px;
+    justify-content: center;
     line-height: 50px;
     padding: 0px 10px;
 }
@@ -135,9 +138,12 @@ i {
 
 .perfil_foto {
     padding-top: 20px;
+    width: 50%;
 }
 
 .perfil_foto img {
+    align-content: flex-end;
+    align-items: flex-end;
     align-self: flex-end;
     border-color: #383a3c;
     border-radius: 100%;
@@ -509,9 +515,133 @@ form label, form legend {
 .derechos {
     background-color: #4c5057;
     bottom: 0;
+    font-size: 1.1em;
     max-width: 100%;
     padding: 5px 5px 5px 5px;
     position: fixed;
     text-align: center;
     width: 100%;
+}
+
+
+
+@media screen and (max-width: 960px) {
+	.encabezado {
+		position: relative;
+		width: auto;
+	}
+
+    .nombre h6 {
+        margin: 0px;
+        padding: 0px;
+    }
+
+	.item_lista {
+		display: none;
+	}
+
+	.inicio {
+		display: flex;
+		justify-content: center;
+    	padding: 10px;
+	}
+
+	.perfil_foto {
+		margin: 0 0 50px 20px;
+        order: 1;
+        width: 50%;
+	}
+
+    .perfil_foto img {
+        height: 100px;
+        order: 0;
+        width: 100px;
+    }
+
+	.presentacion_title {
+		font-size: 20px;
+        line-height: 25px;
+		margin-bottom: 20px;
+        width: 50%;
+	}
+
+    .presentacion_text {
+        display: none;
+    }
+
+	.perfiles {
+		display: flex;
+	}
+
+	.fa {
+		font-size: 15px;
+	}
+
+	.sobre_mi_img {
+		display: none;
+	}
+
+	.about {
+        padding: 30px 0;
+    }
+
+	.skills_list_item {
+		width: 21%;
+	}
+
+	.skills_list_title {
+		font-size: 0.88em;
+	}
+
+	.skills_list_img {
+		width: 4em;
+	}
+
+	.hobbies_list {
+		display: block;
+		text-align: center;
+		padding: 0 20px 20px 20px;
+	}
+
+	.hobbies_list_item {
+		width: 80%;
+		margin-bottom: 40px;
+		border-radius: 0;
+	}
+
+	.formacion_list {
+		display: block;
+		text-align: center;
+	}
+
+	.formacion_list_img {
+		width: 55%;
+	}
+
+	.formacion_list_item {
+        font-size: 20px;
+        padding-bottom: 20px;
+	}
+
+	.projects {
+		padding: 30px 0;
+	}
+	
+	.proyecto_box {
+		display: block;
+	}
+
+	.proyecto_title, .proyecto_text {
+		text-align: left;
+		padding: 0 10px 0 10px;
+	}
+	
+	.proyecto_img {
+		width: 80%;
+		margin-bottom: 20px;
+	}
+
+	.input-padron, .enviar {
+		width: 80%;
+	}
 }
