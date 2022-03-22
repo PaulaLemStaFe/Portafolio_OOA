@@ -1,0 +1,75 @@
+.about {
+    background-color: #e6e1d0;
+}
+
+.sobre_mi {
+    align-items: center;
+    background: url(../imagenes/grain.png) repeat;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    display: flex;
+    flex: none;
+	flex-direction: row-reverse;
+    padding: 35px;
+    position: static;
+}
+
+.sobre_mi_title {
+    color: #383a3c;
+	font-size: 4em;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 0.8em;
+    text-align: center;
+    text-shadow: 1px 2px #fcfaf7, 3px 4px #484a4d;
+    text-transform: uppercase;
+}
+
+.sobre_mi_text {
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 19px;
+	margin: 1.5em 1.2em;
+    padding-left: 0.8em;
+    position: static;
+	text-align: justify;
+    width: 90%;
+}
+
+.sobre_mi_img {
+	margin: 1.2em 1.5em;
+    padding-left: 3em;
+}
+
+.img_compu_vintage {
+	border-radius: 15%;
+	height: 18em;
+}
+
+
+@media screen and (max-width: 960px) {
+    .about {
+        width: 100%;
+    }
+
+    .sobre_mi {
+        padding: 15px;
+    }
+
+    .sobre_mi_title {
+        font-size: 2em;
+        text-shadow: 0.5px 1px #fcfaf7, 1.5px 2px #484a4d;
+    }
+
+    .sobre_mi_text {
+        font-size: 1em;
+        line-height: normal;
+        margin: 1em 0em;
+        padding: 0px;
+        width: 100%;
+    }
+    
+	.sobre_mi_img {
+		display: none;
+	}
+}

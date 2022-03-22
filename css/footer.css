@@ -1,0 +1,29 @@
+.footer {
+    background: url(../imagenes/grain.png) repeat;
+}
+
+.derechos {
+    background-color: #4c5057;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    bottom: 0;
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    color: #F6EDD8;
+    font-size: 1.1em;
+    padding: 50px;
+    padding: 5px 5px 5px 5px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .footer{
+        width: 100%;
+    }
+
+    .derechos {
+        font-size: 1em;
+    }
+}

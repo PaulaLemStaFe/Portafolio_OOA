@@ -1,0 +1,62 @@
+header {
+    background: url(../imagenes/grain.png) repeat;
+    background-color: #78bbbb;
+    position: fixed;
+    width: 100%;
+}
+
+.encabezado {
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em 1.2em;
+}
+
+.nombre h6 {
+    color: #F6EDD8;
+	font-size: 1.4em;
+    font-weight: bold;
+    padding-left: 1.4em;
+}
+
+.navbar {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.item_lista, .item_contacto {
+    display: inline;
+	font-size: 1.1em;
+	font-weight: bold;
+    padding: 0 0.8em;
+}
+
+.item_lista {
+	border-right: 1.5px solid #F6EDD8;
+}
+
+.navbar a {
+    color: #F6EDD8;
+    text-decoration: none;
+}
+
+.navbar a:hover, .perfiles a:hover {
+    color: #4c5057;
+    font-size: 1.15em;
+}
+
+@media screen and (max-width: 960px) {
+    .encabezado {
+		position: relative;
+		width: auto;
+	}
+
+    .nombre h6 {
+        font-size: 1em;
+        margin: 0px;
+        padding: 0px;
+    }
+}

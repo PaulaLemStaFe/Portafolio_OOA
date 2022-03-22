@@ -1,0 +1,155 @@
+.inicio {
+    background-color: #78bbbb;
+}
+
+.banner {
+    align-items: center;
+    background: url(../imagenes/grain.png) repeat;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    color: #F6EDD8;
+    display: flex;
+    justify-content: center;
+    order: 1;
+    padding: 35px;
+}
+
+.presentacion {
+    align-self: stretch;
+    flex: none;
+    padding-top: 20px;
+    position: static;
+    width: 75%;
+}
+
+.presentacion_title {
+    align-items: center;
+    color: #F6EDD8;
+    font-weight: bold;
+	font-size: 40px;
+    justify-content: center;
+    line-height: 50px;
+    padding: 0px 10px;
+}
+
+.presentacion_text {
+    color: #F6EDD8;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 10px 10px;
+}
+
+.perfiles {
+	font-size: 1.575em;
+	margin: 5px 10px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.perfiles li {
+    display: inline;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 0 0.5em;
+}
+
+.icon .fa-sm {
+	font-size: 2em;
+    line-height: 1.5em;
+    vertical-align: .05357em;
+}
+
+i {
+    margin-left: 0.5em
+}
+
+.perfiles a {
+    color: #F6EDD8;
+    margin: 0 0 0 4px;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.perfil_foto {
+    order: 2;
+    padding-top: 20px;
+    width: 25%;
+}
+
+.perfil_foto img {
+    align-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+    border-color: #383a3c;
+    border-radius: 100%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    flex: none;
+    flex-grow: 0;
+    height: 250px;
+    order: 1;
+    width: 250px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .banner {
+        margin: 0;
+        padding: 35px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .inicio {
+		display: flex;
+		justify-content: center;
+	}
+
+    .presentacion {
+        order: 2;
+        width: 75%
+    }
+
+	.presentacion_title {
+		font-size: 20px;
+        line-height: 25px;
+		margin-bottom: 20px;
+        margin-right: 20px;
+        text-align: right;
+	}
+
+    .presentacion_text {
+        display: none;
+    }
+
+    .perfiles {
+        font-size: 0.7em;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .perfiles li {
+        padding: 0px;
+    }
+
+    .perfiles a {
+        padding: 6px;
+    }
+
+	.item_lista {
+		display: none;
+        padding: 0px;
+	}
+
+	.perfil_foto {
+		margin: 0 0 20px 20px;
+        order: 0;
+        width: 25%;
+	}
+
+    .perfil_foto img {
+        height: 100px;
+        order: 0;
+        width: 100px;
+    }
+
+}
