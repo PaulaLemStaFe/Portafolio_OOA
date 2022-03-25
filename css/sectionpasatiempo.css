@@ -1,24 +1,23 @@
 .pasatiempo {
-    background-color: #e3e0dd;
-    color: #383a3c;
+    background-color: #D35244;
 }
 
 .hobbies {
     background: url(../imagenes/grain.png) repeat;
     border-bottom: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+    color: #F6EDD8;
     padding: 50px;
     text-align: center;
 }
 
 .hobbies_title {
-    color: #383a3c;
 	font-size: 4em;
     font-weight: bold;
     line-height: 38px;
     margin: 1.2em 0;
     text-align: center;
-    text-shadow: 1px 2px #fcfaf7, 3px 4px #484a4d;
+    text-shadow: 1px 2px #484a4d, 3px 4px #d4cebf;
     text-transform: uppercase;
 }
 
@@ -35,21 +34,23 @@
     border-style: solid;
 	border-width: 4px;
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: bold;
 	margin: 0 1%;
 	margin-bottom: 1.2em;
     padding: 1em 1em;
     text-align: center;
+    transition: 1s all;
     vertical-align: top;
     width: 15%;
 }
 
 .hobbies_list_item:hover {
-    border-color: #e68966;
-    color: #e68966;
-    font-size: 1.4em;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border-color: #383a3c;
+    color: #383a3c;
+    text-shadow: 0 3px 4px #d4cebf;
+    text-transform: uppercase;
+    transform: scale(1.15);
 }
 
 .hobbies_list_title {
@@ -94,6 +95,6 @@
 
 	.hobbies_list_item {
 		margin-bottom: 20px;
-		width: 60%;
+		width: 75%;
 	}
 }

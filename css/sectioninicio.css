@@ -69,6 +69,13 @@ i {
     margin: 0 0 0 4px;
     padding: 10px 10px;
     text-decoration: none;
+    transition: 1s all;
+}
+
+.perfiles a:hover {
+    color: #4c5057;
+    font-size: 1.11em;
+    text-transform: uppercase;
 }
 
 .perfil_foto {

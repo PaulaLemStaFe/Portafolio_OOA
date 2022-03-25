@@ -39,6 +39,7 @@
 	margin-bottom: 1.2em;
     padding: 1.2em 1.2em;
     text-align: center;
+    transition: 1s all;
     vertical-align: top;
     width: 20%;
 }
@@ -46,8 +47,7 @@
 .formacion_list_item:hover {
     border-color: #e3e0dd;
     color: #e3e0dd;
-    font-size: 1.4em;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    transform: scale(1.15);
 }
 
 .formacion_list_img {

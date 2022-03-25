@@ -27,6 +27,10 @@ header {
     top: 14px;
 }
 
+.item_lista:hover {
+    transform: scale(1.2);
+}
+
 .item_lista, .item_contacto {
     display: inline;
 	font-size: 1.1em;
@@ -41,9 +45,10 @@ header {
 .navbar a {
     color: #F6EDD8;
     text-decoration: none;
+    transition: 1s all;
 }
 
-.navbar a:hover, .perfiles a:hover {
+.navbar a:hover {
     color: #4c5057;
     font-size: 1.15em;
 }
