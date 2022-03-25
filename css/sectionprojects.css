@@ -1,8 +1,10 @@
 .project-section {
+    align-items: center;
     background-color: #e6e1d0;
     flex-direction: column;
     font-size: 1.8em;
     margin: 0 auto;
+    vertical-align: middle;
     width: 100%;
 }
 
@@ -27,12 +29,15 @@
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 25px;
 }
 
 .project-card {
+    height: 110%;
+    margin: 1% 20%;
     position: relative;
+    width: 60%;
 }
 
 .project-img {
@@ -137,7 +142,9 @@
     }
 
     .project-card {
-        height: auto;
+        height: 100%;
+        margin: 1%;
+        width: 100%;
     }
 
     .proyecto_1 {
@@ -145,8 +152,9 @@
     }
 
     .project-img {
-        height: 200px;
+        height: 100%;
         object-fit: fill;
+        width: 100%;
     }
 
     .project-info {

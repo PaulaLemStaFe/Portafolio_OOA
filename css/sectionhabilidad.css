@@ -92,8 +92,8 @@
 
     .skills_list_item {
         border-width: 2px;
-        padding: 1.1em 1.1em;
-		width: 75%;
+        padding: 0.5em 0.5em;
+		width: 50%;
 	}
 
 	.skills_list_title {

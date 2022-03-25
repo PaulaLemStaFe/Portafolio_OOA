@@ -95,6 +95,11 @@
 
 	.hobbies_list_item {
 		margin-bottom: 20px;
-		width: 75%;
+		width: 50%;
 	}
+
+    .hobbies_list_img {
+        height: 150px;
+        width: 150px;
+    }
 }
