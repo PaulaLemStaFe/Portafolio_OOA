@@ -15,6 +15,7 @@
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     color: #383a3c;
     padding: 10px;
+    padding-top: 30px;
     vertical-align: middle;
 }
 
@@ -54,8 +55,13 @@
     width: 100%;
 }
 
-.proyecto_4, .proyecto_2, .proyecto_1 {
+.proyecto_4, .proyecto_1 {
     color: #F6EDD8;
+}
+
+.proyecto_2 {
+    color: #67a5a5;
+    text-shadow: 1px 0 1px black;
 }
 
 .project-content {
@@ -86,13 +92,12 @@
 }
 
 .project-btn {
-    background: #000;
     border: none;
     border-radius: 20px;
-    color: #F6EDD8;
     cursor: pointer;
     font-size: 0.7em;
     height: 40px;
+    margin: 5% 5% 0 5%;
     text-transform: capitalize;
 }
 
@@ -101,9 +106,28 @@
     text-decoration: none;
 }
 
+.project-btn.github {
+    background: #D35244;
+    transition: 1s all;
+}
+
+.project-btn.github:hover {
+    background: #383a3c;
+    text-shadow: 0 3px 4px #d4cebf;
+    text-transform: uppercase;
+    transform: scale(1.10);
+}
+
 .project-btn.live {
-    background: none;
-    border: 2px solid #F6EDD8;
+    background: #e68966;
+    transition: 1s all;
+}
+
+.project-btn.live:hover {
+    background: #4c5057;
+    text-shadow: 0 3px 4px #d4cebf;
+    text-transform: uppercase;
+    transform: scale(1.10);
 }
 
 .project-card:hover .project-img {
@@ -152,9 +176,9 @@
     }
 
     .project-img {
-        height: 100%;
+        height: 98%;
         object-fit: fill;
-        width: 100%;
+        width: 98%;
     }
 
     .project-info {

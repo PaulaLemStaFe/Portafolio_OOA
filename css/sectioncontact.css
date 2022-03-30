@@ -7,16 +7,16 @@
     border-bottom: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 15px rgb(0 0 0 / 25%);
     color: #F6EDD8;
-    padding: 50px;
-	padding: 105px 0 30px 0;
+	padding: 30px 0 30px 0;
     text-align: center;
+    width: 100%;
 }
 
 .contacto_title {
 	font-size: 4em;
     font-weight: bold;
     line-height: 38px;
-    margin: 1.2em 0;
+    margin: 0.6em 0;
     text-align: center;
     text-shadow: 1px 2px #484a4d, 3px 4px #d4cebf;
     text-transform: uppercase;
@@ -28,24 +28,62 @@ form {
     flex-direction: column;
     justify-content: center;
     margin: 40px 0;
-	padding: 0 30px;
+	padding-right: 50px;
 }
 
 form label, form legend {
     display: block;
-    font-size: 20px;
+    font-size: 1.5em;
 	font-weight: bold;
     margin: 0 0 10px;
 }
 
+.input-container, .input-container-invalid {
+    width: 70%;
+}
+
 .input-padron {
-	border: none;
-    display: block;
+	border: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-weight: bold;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 30%;
+    width: 50%;
 }
+
+.input-padron:focus {
+    border-bottom: solid 4px #78bbbb;
+    outline: none;
+}
+
+.mensaje-error {
+    display: none;
+}
+
+.input-container-invalid {
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-container-invalid .input-padron {
+    border: 2px solid #df2525;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #F6EDD8;
+    margin: 0 0 5px;
+  }
+  
+  .input-container-invalid .input-label {
+    color: #df2525;
+    font-size: 1.8em;
+    text-shadow: 0 0 0.8px #F6EDD8;
+  }
+  
+  .input-container-invalid .mensaje-error {
+    color: #D35244;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 0.8px #F6EDD8;
+  }
 
 .enviar {
     background: #78bbbb;
@@ -82,6 +120,22 @@ form label, form legend {
         line-height: normal;
         margin: 0.5em 0;
         text-shadow: 0.5px 1px #484a4d, 1.5px 2px #d4cebf;
+    }
+
+    form {
+        padding: 0px;
+    }
+
+    form label {
+        font-size: 1.2em;
+    }
+
+    .input-container-invalid .input-label {
+        font-size: 1.4em;
+    }
+
+    .input-container-invalid .mensaje-error {
+        font-size: 1em;
     }
 
 	.input-padron, .enviar {

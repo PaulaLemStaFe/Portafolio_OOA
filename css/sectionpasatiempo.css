@@ -54,7 +54,7 @@
 }
 
 .hobbies_list_title {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-weight: bold;
 	padding-bottom: 0.8em;
 }
@@ -95,11 +95,11 @@
 
 	.hobbies_list_item {
 		margin-bottom: 20px;
-		width: 50%;
+		width: 35%;
 	}
 
     .hobbies_list_img {
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
     }
 }

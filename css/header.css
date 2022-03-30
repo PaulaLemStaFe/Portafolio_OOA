@@ -54,7 +54,12 @@ header {
 }
 
 @media screen and (max-width: 960px) {
+    header {
+        position: fixed;
+    }
+    
     .encabezado {
+        padding: 0.6em;
 		position: relative;
 		width: auto;
 	}
@@ -63,5 +68,10 @@ header {
         font-size: 1em;
         margin: 0px;
         padding: 0px;
+    }
+
+    .item_contacto {
+        font-size: 1em;
+        margin-top: -50px;
     }
 }

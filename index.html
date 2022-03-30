@@ -46,7 +46,7 @@
     <section class="inicio" id="sobre_mi">
         <div class="banner">
             <div class="presentacion">
-                <h1 class="presentacion_title">Hola, mi nombre es María Paula Lemos y diseño páginas web</h1>
+                <h1 class="presentacion_title">Hola, mi nombre es María Paula Lemos <br> y diseño páginas web</h1>
                 <p class="presentacion_text">Soy Téncnica en Computación. Actualmente estoy cursando el programa nacional argentino #YoProgramo y estoy participando del proyecto Oracle ONE en Alura Latam.</p>
                 <ul class="perfiles">
                     <li class="item_lista"><a href="https://github.com/PaulaLemStaFe" target="_blank" rel="noopener noreferrer">GitHub <i class="fa fa-github fa-sm"></i></a></li>
@@ -109,11 +109,11 @@
             <h2 class="skills_title">Skills</h2>
             <ul class="skills_list">
                 <li class="skills_list_item">
-                    <br><h3 class="skills_list_title">Spring Boot</h3><br>
+                    <br class="uno"><h3 class="skills_list_title">Spring Boot</h3><br class="uno">
                     <img class="skills_list_img" src="imagenes/skills/spring-booth-logo.png" alt="Spring Boot" title="Spring Boot">
                 </li>
                 <li class="skills_list_item">
-                    <br><h3 class="skills_list_title">Netbeans</h3><br>
+                    <br class="uno"><h3 class="skills_list_title">Netbeans</h3><br class="dos">
                     <img class="skills_list_img" src="imagenes/skills/netbeans_logo.png" alt="Netbeans" title="Netbeans">
                 </li>
                 <li class="skills_list_item">
@@ -326,17 +326,29 @@
         <div class="contacto">
             <h2 class="contacto_title">Contacto</h2>
             <form>
-                <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="input-padron" required>
+                <div class="input-container">
+                    <label class="input-label" for="nombreapellido">Nombre y Apellido</label>
+                    <input name="nombreapellido" type="text" id="nombreapellido" class="input-padron" required minlength="4" maxlength="50" data-tipo="nombreapellido">
+                    <span class="mensaje-error">Este campo no es válido</span>
+                </div>
 
-                <label for="correoelectronico">Correo Electrónico</label>
-                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                <div class="input-container">
+                    <label class="input-label" for="correoelectronico">Correo Electrónico</label>
+                    <input name="correoelectronico" type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com" pattern="^[a-zA-Z0-9_.-]+@([a-zA-Z0-9]+\.)+([a-zA-Z]{2,4})" data-tipo="email">
+                    <span class="mensaje-error">Este campo no es válido</span>
+                </div>
 
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX)XXXX-XXXX">
+                <div class="input-container">
+                    <label class="input-label" for="telefono">Teléfono</label>
+                    <input name="telefono" type="text" id="telefono" class="input-padron" required placeholder="(XX)XXXX-XXXX" minlength="10" maxlength="20" pattern="\d{10}" data-tipo="telefono">
+                    <span class="mensaje-error">Este campo no es válido</span>
+                </div>
 
-                <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                <div class="input-container">
+                    <label class="input-label" for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" name="mensaje" id="mensaje" class="input-padron" required maxlength="300" data-tipo="mensaje"></textarea>
+                    <span class="mensaje-error">Este campo no es válido</span>
+                </div>
 
                 <input type="submit" value="Enviar formulario" class="enviar">
             </form>
@@ -350,6 +362,7 @@
         </div>
     </footer>
 
-    <script src="validacion.js"></script>
+    <script src="./js/app.js" type="module"></script>
+    
 </body>
 </html>

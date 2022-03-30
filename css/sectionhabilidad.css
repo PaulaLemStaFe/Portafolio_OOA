@@ -58,7 +58,7 @@
 }
 
 .skills_list_title {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-weight: bold;
 	padding-bottom: 0.8em;
 }
@@ -90,13 +90,22 @@
         margin-bottom: auto;
     }
 
-    .skills_list_item {
-        border-width: 2px;
-        padding: 0.5em 0.5em;
-		width: 50%;
-	}
+    .skills_list_title {
+        font-size: 1em;
+        padding-bottom: 0.6em;
+    }
 
-	.skills_list_title {
-		font-size: 1em;
+    .uno {
+        display: none;
+    }
+
+    .dos {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .skills_list_item {
+        padding: 0.5em 0.5em;
+		width: 30%;
 	}
 }
