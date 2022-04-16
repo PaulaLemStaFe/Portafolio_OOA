@@ -62,28 +62,28 @@ form label, form legend {
 
 .input-container-invalid {
     margin-bottom: 0.5rem;
-  }
-  
-  .input-container-invalid .input-padron {
+}
+
+.input-container-invalid .input-padron {
     border: 2px solid #df2525;
     border-radius: 7px;
     box-shadow: 0 0 10px #F6EDD8;
     margin: 0 0 5px;
-  }
-  
-  .input-container-invalid .input-label {
+}
+
+.input-container-invalid .input-label {
     color: #df2525;
     font-size: 1.8em;
     text-shadow: 0 0 0.8px #F6EDD8;
-  }
-  
-  .input-container-invalid .mensaje-error {
+}
+
+.input-container-invalid .mensaje-error {
     color: #D35244;
     display: block;
     font-size: 1.2em;
     margin-bottom: 1rem;
     text-shadow: 0 0 0.8px #F6EDD8;
-  }
+}
 
 .enviar {
     background: #78bbbb;
